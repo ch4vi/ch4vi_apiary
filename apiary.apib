@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
+HOST: http://private-e0aacf-ch4vi.apiary-mock.com
 
 # Ch4vi
 
@@ -78,3 +78,20 @@ form of choices.
                     }
                 ]
             }
+            
+            
+## Question [/choice/{choice}]
+
++ Parameters
+    + choice (string) - Choice title
+ 
+
+### Get question by choice [GET]
++ Response 200 (application/json)
+
+        [
+            {
+                 "choice": "Swift",
+                 "votes": 2048
+            }
+        ]
